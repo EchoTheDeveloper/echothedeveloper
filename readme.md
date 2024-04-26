@@ -2,7 +2,7 @@
 
 # Right now I am waiting for brackeys godot megatutorial to come out them im gonna start a massive RPG project!!
 
-# Programming Languages I Know (from order ofr I know the most to I could make an extremly basic console app):
+# Programming Languages I Know (from order of I know the most to I could make an extremly basic console app):
 
 ## Python
 ## Java
