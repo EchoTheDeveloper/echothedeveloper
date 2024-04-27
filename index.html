@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Downloader</title>
+    <link id="theme-style" rel="stylesheet" href="light-theme.css"> <!-- Default light theme -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 8px 12px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+        .dropdown {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Downloader</h1>
+
+        <!-- Dark Mode Toggle Button -->
+        <button class="button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <!-- Project Selection Dropdown -->
+        <div class="dropdown">
+            <label for="project-select">Select Project:</label>
+            <select id="project-select">
+                <option value="proj_1">Project 1</option>
+                <option value="proj_2">Project 2</option>
+                <option value="proj_3">Project 3</option>
+            </select>
+            <button class="button" onclick="downloadProject()">Download</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            const themeStyle = document.getElementById('theme-style');
+            if (themeStyle.getAttribute('href') === 'light-theme.css') {
+                themeStyle.setAttribute('href', 'dark-theme.css');
+            } else {
+                themeStyle.setAttribute('href', 'light-theme.css');
+            }
+        }
+
+        // Function to handle project download
+        function downloadProject() {
+            const projectSelect = document.getElementById('project-select');
+            const selectedProject = projectSelect.value;
+
+            // Simulate download (not a real download)
+            alert(`Downloading ${selectedProject}.zip...`);
+            
+            // You would normally use server-side scripting (e.g., PHP) to handle actual file download
+            // Example: window.location.href = `download.php?project=${selectedProject}`;
+        }
+    </script>
+</body>
+</html>
