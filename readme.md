@@ -8,10 +8,8 @@
 
 # Programming Languages I Know (from order of I know the most to I could make an extremly basic console app):
 
+## C++
 ## Python
 ## Java
 ## Csharp
 ## GDScript
-## Html & CSS
-# PHP
-## C++
