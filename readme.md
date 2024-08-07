@@ -4,8 +4,8 @@
 
 # Programming Languages I Know (from order of I know the most to I have worked on a couple projects):
 
-## C++
 ## Python
-## GDScript
-## Csharp
 ## Java
+## Csharp
+## C++
+## GDScript
